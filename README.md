@@ -13,6 +13,7 @@ By creating a subdomain, for example myhome.facebook.com and running this script
 
 # Requirements
 - php
+- composer (getcomposer.org)
 
 # Setup
 
@@ -20,4 +21,5 @@ By creating a subdomain, for example myhome.facebook.com and running this script
 2. Go to cloudflare and grab your (global) api key: https://dash.cloudflare.com/profile
 3. Rename `config.demo.php` to `config.php`
 4. Edit the config.php data
-5. Setup the cronjob, ex: `*/5 * * * * php /PATH_TO/cron.php >/dev/null 2>&1`
+5. Run `composer install`
+6. Setup the cronjob, ex: `*/5 * * * * php /PATH_TO/cron.php >/dev/null 2>&1`
